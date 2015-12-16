@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="js/jquery.1.11.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.mouseweel.min.js" type="text/javascript"></script>
+	<script src="jquery.macScroll.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.main-cover-list-js')
+			.macScroll({
+				preventBubble: true
+			})
+			.on('fingerUp.macScroll', function(){
+				console.log('fingerUp');
+			})
+			.on('scrollStart.macScroll', function(){
+				// console.log('scrollStart');
+			})
+			.on('scrollStop.macScroll', function(){
+				// console.log('scrollStop');
+			});
+			
+		});
+		
+	</script>
+</head>
+<body>
+	<div class="main-cover-list-js" style="height: 1000px; background: red;"></div>
+</body>
+</html>
