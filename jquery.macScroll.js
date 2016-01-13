@@ -8,7 +8,7 @@
 		var options = $.extend({
 			preventBubble: false,
 			timeout: 100,
-			timeoutShift: 50
+			timeoutShift: 150
 		}, options);
 
 		return this.each(function(){
